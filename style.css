@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://images.pexels.com/photos/32237/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+.introduction {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 2.5rem;
+}
+#saying {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+  margin-top: -15px;
+}
+
+#highlight {
+  color: #DCD427;
+}
+#career {
+  font-weight: 200;
+  font-style: italic;
+}
+.form-section {
+  display: flex;
+  justify-content: center;
+  background:rgba(56,255,255,0.1);
+  height: 50%;
+  width: 90%;
+  color: #fff;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heading {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 24px;
+  height: 0.5rem
+}
+.form-inline {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+input[type=text], select {
+  padding: 10px;
+  border: none;
+  margin-left: 15px;
+  margin-top: 10px;
+  font-family: 'Raleway';
+}
+select {
+  border: none;
+  margin-left: 15px;
+  width: 35%;
+}
+input[type=submit] {
+  border: none;
+  margin-left: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Raleway';
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #ff9800;
+  color: #ff9800;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase
+}
+input[type=submit]:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  .form-inline {
+    display: flex;
+    flex-direction: column;
+  }
+  #catchphrase {
+    width: 70%;
+  }
+  #careers {
+    width: 70%;
+  }
+  #introduce {
+    font-size: 30px;
+  }
+  #name {
+    width: 70%;
+  }
+  #saying {
+    font-size: 20px;
+  }
+}

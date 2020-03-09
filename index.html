@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Brian's Portfolio Hero</title>   
+</head>
+<body>
+    <div class="container">
+        <div class="introduction">
+          <h2 id="introduce">Hello, I am 
+            <span id="highlight">John Smith</span>.<br>
+            I'm a
+            <span id="career">Fullstack Web Developer</span>.
+          </h2>
+          <div class="sub-content">
+            <p id="saying">I enjoy bringing concepts to reality.</p>
+          </div>
+        </div>
+        <div class="form-section">
+          <h4 id="heading">Edit the hero</h4>
+          <form action="/" class="form-inline">
+            <input id="name" type="text" placeholder="Enter name" size="35">
+            <select id="careers" name="career1">
+              <option value="" selected disabled>Select below option</option>
+              <option value="1">Frontend Web Developer</option>
+              <option value="2">Backend Web Developer</option>
+              <option value="3">Fullstack Web Developer</option>
+              <option value="4">Mobile Developer</option>
+            </select>
+            <input type="text" id="catchphrase" size="75" name="catchphrase" placeholder="Why you love your job">
+            <input type="submit" class="button-btn">
+          </form>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="app.js"></script>
+    </body>
+</html>
